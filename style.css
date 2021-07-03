@@ -1,12 +1,14 @@
-*{
-    box-sizing:border-box;
-    outline: 1px solid yellow;
-}
 
 /* tag{
 
     property name: property value
 } */
+
+root {
+    --space: 1rem;
+    --BGDark: black;
+    --fontonDark: white;
+}
 
 body{
     margin: 20px;
@@ -17,4 +19,26 @@ body{
 
 header{
  display: flex;   
+ flex-direction: row;
+ justify-content: space-between;
+ padding: 1rem;
+ color: var(--fontonDark);
+ background-color: var(--BGDark);
+
+}
+
+nav{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;   
+}
+
+main{
+padding: var(--space);
+}
+
+fotter{
+padding: var(--space);
+background-color: var(--BGDark);
+color: var(--fontonDark);
 }
